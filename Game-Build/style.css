@@ -1,17 +1,16 @@
 /* style.css */
 body {
-	background-color: rgb(37, 37, 37);
-  }
-  
-  #horizontal {
+	margin: 0;
+	padding: 0;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	position: relative; /* Ensure positioning is relative */
+	justify-content: center;
+	height: 100vh;
+	background-color: rgb(37, 37, 37); /* Match the canvas background */
+	overflow: hidden; /* Prevent scrolling */
   }
   
-  #vertical {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-  }  
+  canvas {
+	display: block; /* Prevent any default inline-block spacing issues */
+  }
+   
