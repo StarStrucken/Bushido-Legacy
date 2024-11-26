@@ -80,54 +80,44 @@ function creditsButton() {
 	text("CREDITS", 1115, 450);
 }//startButton
 function mousePressed() {
-	if (mouseX > 1015 && mouseX < 1215 && mouseY > 80 && mouseY < 180 &&
-		scene === 'title') {
+	if (mouseX > 1015 && mouseX < 1215 && mouseY > 80 && mouseY < 180 &&scene === 'title') {
 		//start button
 		cursor('default');
 		scene = 'gameMode';
-	} else if (mouseX > 1015 && mouseX < 1215 && mouseY > 240 && mouseY < 340 &&
-		scene === 'title') {
+	} else if (mouseX > 1015 && mouseX < 1215 && mouseY > 240 && mouseY < 340 &&scene === 'title') {
 		//instructions button
 		cursor('default');
 		scene = 'instructions';
-	} else if (mouseX > 1015 && mouseX < 1215 && mouseY > 400 && mouseY <
-		500 && scene === 'title') {
+	} else if (mouseX > 1015 && mouseX < 1215 && mouseY > 400 && mouseY <500 && scene === 'title') {
 		//credits button
 		cursor('default');
 		scene = 'credits'
-	} else if (mouseX >= 265 && mouseX <= 405 && mouseY >= 500 && mouseY <=
-		560 && scene === 'instructions') {
+	} else if (mouseX >= 265 && mouseX <= 405 && mouseY >= 500 && mouseY <=560 && scene === 'instructions') {
 		//playerViewer button
 		cursor('default');
 		playerKeys++;
-	} else if (mouseX >= 1115 && mouseX <= 1225 && mouseY >= 500 && mouseY
-		<= 560 && scene === 'instructions') {
+	} else if (mouseX >= 1115 && mouseX <= 1225 && mouseY >= 500 && mouseY<= 560 && scene === 'instructions') {
 		//back button (instructions page)
 		cursor('default');
 		scene = 'title';
-	} else if (mouseX >= 1115 && mouseX <= 1225 && mouseY >= 500 && mouseY
-		<= 560 && scene === 'credits') {
+	} else if (mouseX >= 1115 && mouseX <= 1225 && mouseY >= 500 && mouseY<= 560 && scene === 'credits') {
 		//back button (credits page)
 		cursor('default');
 		scene = 'title';
-	} else if (mouseX >= 1115 && mouseX <= 1225 && mouseY >= 500 && mouseY
-		<= 560 && scene === 'gameMode') {
+	} else if (mouseX >= 1115 && mouseX <= 1225 && mouseY >= 500 && mouseY<= 560 && scene === 'gameMode') {
 		//back button (gameMode page)
 		cursor('default');
 		scene = 'title';
-	} else if (mouseX >= 265 && mouseX <= 665 && mouseY >= 260 && mouseY <=
-		360 && scene === 'gameMode') {
+	} else if (mouseX >= 265 && mouseX <= 665 && mouseY >= 260 && mouseY <=360 && scene === 'gameMode') {
 		//multiplayer button (gameMode page)
 		cursor('default');
 		twoPlayer = true;
 		scene = 'fight';
-	} else if (mouseX >= 765 && mouseX <= 1165 && mouseY >= 260 && mouseY
-		<= 360 && scene === 'gameMode') {
+	} else if (mouseX >= 765 && mouseX <= 1165 && mouseY >= 260 && mouseY<= 360 && scene === 'gameMode') {
 		//singleplayer button (gameMode page)
 		cursor('default');
 		scene = 'fight';
-	} else if (mouseX >= 630 && mouseX <= 880 && mouseY >= 305 && mouseY <=
-		365 && scene === 'fight') {
+	} else if (mouseX >= 630 && mouseX <= 880 && mouseY >= 305 && mouseY <=365 && scene === 'fight') {
 		//back to menu (from fight)
 		cursor('default');
 		location.reload();
