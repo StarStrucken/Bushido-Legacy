@@ -6,76 +6,66 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Bushido Legacy</title>
 	<link href="images/webpageLogo.png" rel="icon" type="image/png">
-	
 	<!-- css link -->
-	<link href="style.css" rel="stylesheet" type="text/css"/>
-
-	<!-- Sriracha font import	 -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!-- Sriracha font import	-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-
-	<!-- 	Rampart One font import -->
-	<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Rampart+One:wght@400&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-
-	<!-- 	Electrolize font import -->
+	<!--	Rampart One font import -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;7 00&family=Rampart+One:wght@400&family=Source+Sans+Pro:wght@600&display=s wap"
+		rel="stylesheet">
+	<!--	Electrolize font import -->
 	<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
-
-	<!-- 	p5 library import -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js">
-	</script>
-
+	<!--	p5 library import -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"> </script>
 	<!-- load game images, music, and sound effects -->
 	<script src="preload.js"></script>
-	
-	<!-- player and enemy object	 -->
+	<!-- player and enemy object	-->
 	<script src="game-mechanics/character.js"></script>
-
-	<!-- collision function	 -->
-  <script src="game-mechanics/collision.js"></script>
-
+	<!-- enemy ai (gameMode 1)	-->
+	<script src="game-mechanics/ai.js"></script>
+	<!-- multiplayer (gameMode 2)	-->
+	<script src="game-mechanics/multiplayer.js"></script>
+	<!-- collision function	-->
+	<script src="game-mechanics/collision.js"></script>
 	<!-- determines who wins based on health or timer ends -->
 	<script src="game-mechanics/gameEnd.js"></script>
-
-	<!-- healthbar of player and enemy	 -->
+	<!-- healthbar of player and enemy	-->
 	<script src="game-mechanics/healthbar.js"></script>
-
 	<!-- keys for the game -->
 	<script src="game-mechanics/keys.js"></script>
-
 	<!-- timer for the game rounds -->
 	<script src="game-mechanics/timer.js"></script>
-
-	<!-- everything related to user fighting loops when called in main	 -->
+	<!-- everything related to user fighting loops when called in main	-->
 	<script src="screens/fight.js"></script>
-
-	<!-- 	instructions screen	 -->
+	<!--	instructions screen	-->
 	<script src="screens/instructions.js"></script>
-
-	<!-- 	title screen	 -->
+	<!-- credits screen	-->
+	<script src="screens/credits.js"></script>
+	<!--	title screen	-->
 	<script src="screens/title.js"></script>
-
+	<!-- player chooses gamemode to play (ai or multiplayer) -->
+	<script src="screens/gameMode.js"></script>
 	<!-- backgrounds -->
 	<script src="setting.js"></script>
-
-	<!-- 	p5 file for sound funtions -->
+	<!--	p5 file for sound functions -->
 	<script src="audio/p5.sound.js"></script>
-	
-	<!-- 	audio functions (game music and sound effects) -->
+	<!--	audio functions (game music and sound effects) -->
 	<script src="audio/sound.js"></script>
-	
 	<!-- main center of the game (loops) -->
-  <script src="main.js"></script>
+	<script src="main.js"></script>
 </head>
 
 <body>
-		<!-- adjustment of canvas in center -->
-		<div id="horizontal">
-			<div id="vertical">
-				<!-- 	game canvas	 -->
-		    <div id="mycanvas"></div>
-			</div>
+	<!-- adjustment of canvas in center -->
+	<div id="horizontal">
+		<div id="vertical">
+			<!-- game canvas -->
+			<div id="mycanvas"></div>
 		</div>
+	</div>
 </body>
 
 </html>

@@ -39,7 +39,7 @@ function healthBar(){
 		fill(136,29,134);
 		rect(770,80,300+healthBarChange[1],40,15);
 	}
-	//sends parameter to gameEnd function determining who wins when 			health is run out
+	//sends parameter to gameEnd function determining who wins when health is run out
 	if (enemy.health <= 0) {
 		gameOver('player');
 	} else if (player.health <= 0) {
