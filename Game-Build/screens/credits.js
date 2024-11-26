@@ -29,10 +29,10 @@ function credits() {
     text("IMAGE EDITORS", 260, 400);
     text("MUSIC/AUDIO", 260, 490);
     textSize(15);
-    text("⚔https://br.pinterest.com/pin/136022851234122656/\n⚔https://www.tumblr.com/the2dstagesfg/627178855257473024/geese-tower\n⚔https://www.deviantart.com/provellone/art/autumn-background-pixel-880672834\n⚔https://4kwallpapers.com/black-dark/samurai-katana-warrior-immortal-sun-silhouette-black - 7471.html", 490, 200);
-    text("⚔https://jacob-aberdevine.itch.io/\n⚔https://www.shutterstock.com/image-illustration/pixel-art-samurai-1350061691\n⚔https://www.123rf.com/photo_111063881_traditional-samurai-sword-and-blooming-\nsakura - branches - katana - and - japanese - red - sun - vector - design.html", 490,300);
-    text("⚔PixilArt\n⚔Pixlr X, Photopea\n⚔remove.bg, ezgif.com, onlinegiftools.com, watermarkremover.io", 490, 400);
-    text("⚔https://www.youtube.com/watch?v=HV6GIIYgULs\n⚔https://www.youtube.com/watch?v=XewShxsP4PE", 490, 490);
+    text("⚔ https://br.pinterest.com/pin/136022851234122656/\n⚔ https://www.tumblr.com/the2dstagesfg/627178855257473024/geese-tower\n⚔ https://www.deviantart.com/provellone/art/autumn-background-pixel-880672834\n⚔ https://4kwallpapers.com/black-dark/samurai-katana-warrior-immortal-sun-silhouette-black - 7471.html", 490, 200);
+    text("⚔ https://jacob-aberdevine.itch.io/\n⚔ https://www.shutterstock.com/image-illustration/pixel-art-samurai-1350061691\n⚔ https://www.123rf.com/photo_111063881_traditional-samurai-sword-and-blooming-\n  sakura-branches-katana-and-japanese-red-sun-vector-design.html", 490,300);
+    text("⚔ PixilArt\n⚔ Pixlr X, Photopea\n⚔ remove.bg, ezgif.com, onlinegiftools.com, watermarkremover.io", 490, 400);
+    text("⚔ https://www.youtube.com/watch?v=HV6GIIYgULs\n⚔ https://www.youtube.com/watch?v=XewShxsP4PE", 490, 490);
     //backButton
     textSize(30);
     textAlign(CENTER);
