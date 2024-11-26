@@ -36,14 +36,13 @@ function title() {
 		hovering[1] = true;
 		cursor('pointer');
 	} else if (mouseX > 1015 && mouseX < 1215 && mouseY > 400 && mouseY < 500) {
-	//title
-	//credits button
-	hovering[2] = true;
-	cursor('pointer');
+		//credits button
+		hovering[2] = true;
+		cursor('pointer');
 	} else {
-	for (let i = 0; i < 3; i++) {
-		hovering[i] = false;
-	}
+		for (let i = 0; i < 3; i++) {
+			hovering[i] = false;
+		}
 	cursor('default');
 	}
 }//title
@@ -58,6 +57,7 @@ function startButton() {
 	fill(255);
 	text("START", 1115, 130);
 }//startButton
+
 function instructionButton() {
 	if (hovering[1]) {
 		fill(139, 0, 0);
@@ -69,6 +69,7 @@ function instructionButton() {
 	textSize(36);
 	text("HOW TO\nPLAY", 1115, 290);
 }//startButton
+
 function creditsButton() {
 	if (hovering[2]) {
 		fill(139, 0, 0);
@@ -79,6 +80,7 @@ function creditsButton() {
 	fill(255);
 	text("CREDITS", 1115, 450);
 }//startButton
+
 function mousePressed() {
 	if (mouseX > 1015 && mouseX < 1215 && mouseY > 80 && mouseY < 180 &&scene === 'title') {
 		//start button

@@ -12,7 +12,7 @@ function setting(sceneNum){
 	}
 	                                          
 	if(sceneNum === 0){
-		image(bg[0], 0, 0, 1050, height);
+		image(bg[0], 215, 0, 1050, height);
 	} else if (sceneNum === 1){
 		background(bg[1]);
 	}

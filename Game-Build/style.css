@@ -1,35 +1,19 @@
 /* style.css */
-/* Ensure body takes full height and removes extra spacing */
-body, html {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgb(37, 37, 37); /* Match the theme */
+
+body {
+	background-color: rgb(37,37,37);
   }
   
-  /* Centering the main container */
   #horizontal {
-	display: flex;
-	justify-content: center; /* Horizontally center */
-	align-items: center; /* Vertically center */
-	width: 100%; /* Take full width */
-	height: 100%; /* Take full height */
+	  display: flex;
+	justify-content: center;
+	align-items: center;
   }
   
   #vertical {
-	display: flex;
-	flex-direction: column; /* Stacks child elements vertically */
-	justify-content: center;
-	align-items: center;
+	  margin: 20px auto; 
+	  position: absolute; 
+	  top: 50%; 
+	  transform: translateY(-50%);
   }
-  
-  #mycanvas {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: black; /* just for visibility */
-  }  
    
