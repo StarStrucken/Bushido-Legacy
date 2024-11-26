@@ -1,16 +1,35 @@
 /* style.css */
-body {
+/* Ensure body takes full height and removes extra spacing */
+body, html {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	height: 100vh;
-	background-color: rgb(37, 37, 37); /* Match the canvas background */
-	overflow: hidden; /* Prevent scrolling */
+	align-items: center;
+	background-color: rgb(37, 37, 37); /* Match the theme */
   }
   
-  canvas {
-	display: block; /* Prevent any default inline-block spacing issues */
+  /* Centering the main container */
+  #horizontal {
+	display: flex;
+	justify-content: center; /* Horizontally center */
+	align-items: center; /* Vertically center */
+	width: 100%; /* Take full width */
+	height: 100%; /* Take full height */
   }
+  
+  #vertical {
+	display: flex;
+	flex-direction: column; /* Stacks child elements vertically */
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #mycanvas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black; /* just for visibility */
+  }  
    
